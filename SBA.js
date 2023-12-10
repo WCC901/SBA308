@@ -3,7 +3,7 @@ const CourseInfo = {"id": 151,
 const AssignmentGroup = {
     "id": 107,
     "name": "Starting With The Starters",
-    "course_id": 1818,
+    "course_id": 151,
     "group_weight": 30,
     "assignments": [
         {
@@ -72,4 +72,15 @@ const LearnerSubmissions = [{
         "score": 150
         }
     }]
+            //(CourseInfo, AssignmentGroup, [LearnerSubmission])
+function getLearnerData(course, ag, submissions) {
+    newArray = [];
+    if (course.id != ag.course_id) {
+        throw new Error ("Mismatching IDs");
+    }
+    for (const assignment of ag.assignments) {
+        
+    }
+}
 
+console.log();
